@@ -9,7 +9,7 @@
 
 |Membre                         |Travail                      |
 |-------------------------------|-----------------------------|
-|`LACHAISE Tony`            |- Création Front-End|
+|`LACHAISE Tony`            |- Initialisation Express, |
 |`MASSOUNDI Samir`            |- Mise en place du git, structure du site,             |
 |`MATTEOLI Tristan`|- Edition du README.md, mise en place des routes|
 |`RUIZ Tom`|- Création du controller principal|
