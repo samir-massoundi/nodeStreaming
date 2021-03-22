@@ -18,10 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //const accueilFile = fs.readFileSync('./index.html') 
 
 // On lie le html de la vidéo 8k à video8kFile
-const video8kFile = fs.readFileSync('./video1.html');
+const video8kFile = fs.readFileSync('./public/video1.html');
 
 // On lie le html de la vidéo 720p à video720pFile
-const video720pFile = fs.readFileSync('./video2.html');
+const video720pFile = fs.readFileSync('./public/video2.html');
 
 //on appelle video8kFile qui lie le fichier html et donc l'affiche sur la route qu'on donne au app.get
 function video8kController(req, res){
