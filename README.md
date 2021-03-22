@@ -3,7 +3,7 @@ Projet scolaire de groupe sur Node.js pour *Ynov Campus Aix-en-Provence*
 
 ## Sujet :
 
->![Screenshot]
+>![Screenshot](img/tasks.png)
 
 ## Composition du groupe :
 
