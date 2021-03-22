@@ -23,7 +23,7 @@ app.get("/video720p", (req, res) => {
         res.status(400).send("Requires range header");
     }
 
-    const videoPath = "./assets/video2.mp4";
+    const videoPath = "./assets/720P_VIDEO_ULTRAHD_120FPS.mp4";
     const videoSize = fs.statSync(videoPath).size;
 
     const CHUNK_SIZE = 10 ** 6;
