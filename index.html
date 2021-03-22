@@ -37,7 +37,7 @@
         </div>
       </nav>
       <section class='row'>
-          <div class="col-sm-12 ">
+          <!-- <div class="col-sm-12 ">
               <h2 class="text-center"> Bienvenue sur notre lecteur de fichier vidéo</h2>
               <h3 class="text-center"> Selectionnez une vidéo </h3>
           </div>
@@ -45,7 +45,11 @@
           <div class="d-grid gap-2 col-6 mx-auto">
             <a href="/video8k" class="btn btn-primary">Video 8k</a>
             <a href="/video720p" class="btn btn-primary">Video 720p</a>
-          </div>
+          </div> -->
+
+          <video id="videoPlayer" width="100%" controls muted="muted" autoplay>
+            <source src="/video" type="video/webm" />
+          </video>
       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
