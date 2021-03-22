@@ -17,6 +17,37 @@ app.use(express.static(path.join(__dirname, 'public')));
 //On fait un appel syncrone MAIS avant l'initialisation donc "ca passe" --> On lie index.html avec accueilFile
 //const accueilFile = fs.readFileSync('./index.html') 
 
+app.get("/video8k", (req, res) => {
+    const range = req.headers.range;
+    if(!range) {
+        res.status(400).send("Requires range header");
+    }
+
+    const videoPath = "./assets/8K_VIDEO_ULTRAHD_120FPS.webm";
+    const videoSize = fs.statSync(videoPath).size;
+
+    const CHUNK_SIZE = 10 ** 6;
+    const start = Number(range.replace(/\D/g, ""));
+    const end = Math.min(start + CHUNK_SIZE, videoSize - 1);
+
+    // Create headers
+  const contentLength = end - start + 1;
+  const headers = {
+    "Content-Range": `bytes ${start}-${end}/${videoSize}`,
+    "Accept-Ranges": "bytes",
+    "Content-Length": contentLength,
+    "Content-Type": "video/webm",
+  };
+
+  res.writeHead(206, headers);
+
+  // create video read stream for this particular chunk
+  const videoStream = fs.createReadStream(videoPath, { start, end });
+
+  // Stream the video chunk to the client
+  videoStream.pipe(res);
+})
+
 app.get("/video720p", (req, res) => {
     const range = req.headers.range;
     if(!range) {
