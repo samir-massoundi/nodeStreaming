@@ -16,10 +16,11 @@
 
 ## Procédure d'installation :
 
- >- Téléchargez le git du projet complet depuis la branche master.
- >- Nous utilison `express` afin de lancer l'application. Pour l'installer -> `npm install express`.
+ >- Cloner le repository git du projet complet depuis la branche master.
+ >- Télécharger les 2 vidéos (liens plus bas) et les mettre dans le dossier assets.
+ >- Nous utilisons `express` afin de lancer l'application. Pour l'installer -> `npm install express`.
  >- Pour lancer l'application utilisez la commande -> `node ./server.js` (permet de le faire tourner en local. Nous utiliserons un serveur lors de la mise en production).
- >- Pour se connecter à l'application, connectez vous au `localhost` décrit après avoir lancé la commande `node ./server.js`
+ >- Pour se connecter à l'application, aller sur l'url du `localhost` décrit après avoir lancé la commande `node ./server.js`
 
 
 ## Etapes de créations du projet :
