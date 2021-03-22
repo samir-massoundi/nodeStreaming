@@ -9,9 +9,9 @@
 
 |Membre                         |Travail                      |
 |-------------------------------|-----------------------------|
-|`LACHAISE Tony`            |- Initialisation Express, |
+|`LACHAISE Tony`            |- Initialisation Express, liasion Back-Front|
 |`MASSOUNDI Samir`            |- Mise en place du git, structure du site,             |
-|`MATTEOLI Tristan`|- Edition du README.md, mise en place des routes|
+|`MATTEOLI Tristan`|- Travail organisationnel, edition du README.md, mise en place des routes|
 |`RUIZ Tom`|- Création du controller principal|
 
 ## Procédure d'installation :
