@@ -1,5 +1,5 @@
 # nodeStreaming
-Projet scolaire de groupe sur Node.js pour *Ynov Campus Aix-en-Provence*
+> Projet scolaire de groupe sur Node.js pour *Ynov Campus Aix-en-Provence*
 
 ## Sujet :
 
